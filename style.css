@@ -110,5 +110,17 @@ svg{
     right: 30px;
     top: 175px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
+svg:hover{
+    background-color: rgb(129, 0, 204);
+}
+
+footer{
+    position: absolute;
+    font-family: PoppinsRegular;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
