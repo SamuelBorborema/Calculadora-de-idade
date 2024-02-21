@@ -13,33 +13,35 @@
     <section class="dd" >
       <div class="day">
         <h1>DAY</h1>
-        <input min="1" max="31" maxlength="2" id="Day" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
+        <input min="1" max="31" maxlength="2" id="Day" type="text"  placeholder="DD" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
       </div>
       <div class="month">
         <h1>MONTH</h1>
-        <input min="01" max="12" maxlength="2" id="Month" type="text"oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
+        <input min="01" max="12" maxlength="2" id="Month" placeholder="MM" type="text"oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
       </div>
       <div class="year" >
         <h1>YEAR</h1>
-        <input min="1900" max="2023"  maxlength="4" id="Year" type="text"oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
+        <input min="1900" max="2023"  maxlength="4" id="Year" placeholder="MM" type="text"oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
       </div>
     </section>
+    <section class="middle">
+      <hr>
+      <svg id="button" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
 
-    <hr>
-    <svg id="button" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+    </section>
     
 
     <section class="ymd">
       <div class="yy">
-        <h2 class="purple" id="y-p">0</h2>
+        <h2 class="purple" id="y-p">- -</h2>
         <h2>years</h2>
       </div>
       <div class="mm">
-        <h2 class="purple" id="m-p">0</h2>
+        <h2 class="purple" id="m-p">- -</h2>
         <h2>months</h2>
       </div>
       <div class="mm">
-        <h2 class="purple" id="d-p">0</h2>
+        <h2 class="purple" id="d-p">- -</h2>
         <h2>days</h2>
       </div>
     </section>
